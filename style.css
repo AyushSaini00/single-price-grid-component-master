@@ -1,0 +1,179 @@
+/*  COLORS */
+
+/* 
+    Cyan: hsl(179, 62%, 43%)
+    Bright Yellow: hsl(71, 73%, 54%)
+
+
+    
+    Light Gray: hsl(204, 43%, 93%)
+    Grayish Blue: hsl(218, 22%, 67%)
+
+ */
+/* 16px = 1rem */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'karla', sans-serif;
+    font-size: 16px;   
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.grid {
+    height: 475px;
+    width: 635px;
+    background-color: #fff;
+    border-radius: 1%;
+    margin: 10% auto;
+    box-shadow: 1px 3px 4px 1px rgba(0,0,0,0.1);
+}
+
+.top {
+    height: 177px;
+    padding: 2.5rem 2.5rem 0 2.5rem;
+    
+}
+
+.top h2 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    margin-top: 0;
+}
+.top h3 {
+    color: hsl(71, 73%, 54%);
+}
+.top p {
+    color:  hsl(218, 22%, 67%);
+}
+
+.bottom {
+    height: 258px;
+    display: flex;
+    color: #fff;
+    flex-direction: row;
+}
+
+.bottom h3 {
+    margin-top: 0;
+}
+.bottom h1 {
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 1rem;;
+}
+
+.bottom p {
+    margin: 0.7rem 0 1.2rem 0;
+}
+
+
+
+.bottom-left {
+    background-color: hsl(179, 62%, 43%);
+    padding: 2.5rem;
+    width: 50%;
+
+}
+
+.h1-dollar {
+    display: inline-block;
+    font-weight: 100;
+    color: rgb(255, 255, 255,0.8);
+}
+
+.signup {
+    text-decoration: none;
+    color: #fff;
+    background-color: hsl(71, 73%, 54%);
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 2%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem 0.2rem;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    
+}
+
+.signup:hover {
+    background-color: hsl(71, 73%, 48%);
+    cursor: pointer;
+}
+
+.bottom-right {
+    background-color: hsl(179, 84%, 45%);
+    padding: 2.5rem;
+    width: 50%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+li {
+
+}
+
+.points {
+    padding: 0 0 3px 0;
+    margin: 0;
+    color: rgba(255,255,255,0.8);
+    font-size: 0.98rem;
+}
+
+/* 45 rem = 720px */
+
+@media (max-width: 45rem){
+    .grid {
+        height: auto;
+        width: 100%;
+        max-width: 45rem;
+        margin: 0;
+    }
+    
+    .top {
+        height: auto;
+    }
+    .bottom {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .bottom-left {
+        border-bottom-right-radius: 0px;
+        width: inherit;
+    }
+    
+    .bottom-right {
+        border-bottom-left-radius: 1%;
+        width: inherit;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
